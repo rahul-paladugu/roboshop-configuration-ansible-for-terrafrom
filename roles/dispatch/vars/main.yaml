@@ -1,0 +1,3 @@
+amqp_host: rabbitmq.rscloudservices.icu
+amqp_user: roboshop
+amqp_pass: roboshop123

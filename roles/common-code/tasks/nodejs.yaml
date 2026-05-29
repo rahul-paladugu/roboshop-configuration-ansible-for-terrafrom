@@ -1,0 +1,12 @@
+   - name: Remove default version of nodejs
+     ansible.builtin.command:
+       cmd: dnf module disable nodejs -y
+
+   - name: Enable required version of nodejs
+     ansible.builtin.command:
+       cmd: dnf module enable nodejs:20 -y
+
+   - name: Install nodejs
+     ansible.builtin.dnf:
+       name: nodejs
+       state: present

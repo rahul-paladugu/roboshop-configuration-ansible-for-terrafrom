@@ -1,0 +1,28 @@
+# Install component language
+- name: Dispatch configuration
+  hosts: dispatch
+  become: yes
+  tasks:
+   - name: Install golang
+     ansible.builtin.dnf:
+       name: golang
+       state: present
+# App setup
+- name: App setup
+  ansible.builtin.import_role:
+   name: common-code
+   tasks_from: app-setup.yaml
+# Install dependencies
+- name: dependencies go-mod
+  ansible.builtin.shell: {{ item }}
+  args:
+    chdir: /app   
+  loop:
+   - go mod init dispatch
+   - go get
+   - go-build
+# Service setup
+- name: Service setup
+  ansible.builtin.import_role:
+   name: common-code
+   tasks_from: service-setup.yaml

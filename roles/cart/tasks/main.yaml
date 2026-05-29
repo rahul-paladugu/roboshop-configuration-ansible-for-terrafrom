@@ -1,0 +1,20 @@
+# Call nodejs installation code from common code
+ - name: Install nodejs
+   ansible.builtin.import_role:
+     name: common-code
+     tasks_from: nodejs.yaml
+#call common code for app setup
+ - name: App setup
+   ansible.builtin.import_role:
+    name: common-code
+    tasks_from: app-setup.yaml
+# Install dependencies
+ - name: Install nodejs dependencies
+   ansible.builtin.import_role:
+    name: common-code
+    tasks_from: nodejs-dependencies.yaml
+# Setup service
+ - name: Setup service
+   ansible.builtin.import_role:
+    name: common-code
+    tasks_from: service-setup.yaml

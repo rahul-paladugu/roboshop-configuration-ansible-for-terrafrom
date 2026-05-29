@@ -1,0 +1,4 @@
+# Meta is to declare the dependencies of the role.
+#This helps other users to know which other roles are required for this role to work.
+dependencies:
+  - role: common-code

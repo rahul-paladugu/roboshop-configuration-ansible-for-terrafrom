@@ -1,0 +1,5 @@
+cart_host: cart.rscloudservices.icu
+user_host: user.rscloudservices.icu
+rabbitmq_host: rabbitmq.rscloudservices.icu
+rabbitmq_user: roboshop
+rabbitmq_pass: roboshop123

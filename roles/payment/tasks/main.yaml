@@ -1,0 +1,22 @@
+ # Install component language dependencies
+ - name: Install python3 gcc python3-devel
+   ansible.builtin.dnf:
+    name: "{{ item }}"
+    state: present
+   loop:
+    - python3
+    - gcc
+    - python3-devel
+# App Setup
+ - name: App setup
+   ansible.builtin.import_role:
+    name: common-code
+    tasks_from: app-setup.yaml
+#Install dependencies
+ - name: Install Python requirements using pip3
+   ansible.builtin.command: /usr/bin/python3 -m pip install -r /app/requirements.txt
+# Service setup
+ - name: service setup
+   ansible.builtin.import_role:
+    name: common-code
+    tasks_from: service-setup.yaml

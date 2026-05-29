@@ -1,0 +1,4 @@
+# Install dependencies
+ - name: Install packages dependencies
+   community.general.npm:
+    path: /app

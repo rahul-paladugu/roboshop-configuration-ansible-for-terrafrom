@@ -1,0 +1,7 @@
+# Handlers are used to trigger actions when notified by tasks.
+# It runs when a task status is changed. 
+#For example, if a task installs a package and the package was not previously installed, then the task status is changed to "changed". If the task status is "changed", then the handler will be triggered.
+
+- name: daemon-reload
+  ansible.builtin.systemd:
+    daemon_reload: yes
