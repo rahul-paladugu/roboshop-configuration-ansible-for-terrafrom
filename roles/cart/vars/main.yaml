@@ -1,2 +1,2 @@
-catalogue: catalogue.rscloudservices.icu
-redis: redis.rscloudservices.icu
+catalogue: catalogue-{{ project }}-{{ env }}.rscloudservices.icu
+redis: redis-{{ project }}-{{ env }}.rscloudservices.icu
