@@ -1,3 +1,3 @@
-amqp_host: rabbitmq-{{ project }}-{{ env }}.rscloudservices.icu
+amqp_host: rabbitmq-{{ env }}-{{ project }}.rscloudservices.icu
 amqp_user: roboshop
 amqp_pass: roboshop123

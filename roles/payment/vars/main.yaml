@@ -1,5 +1,5 @@
-cart_host: cart-{{ project }}-{{ env }}.rscloudservices.icu
-user_host: user-{{ project }}-{{ env }}.rscloudservices.icu
-rabbitmq_host: rabbitmq-{{ project }}-{{ env }}.rscloudservices.icu
+cart_host: cart-{{ env }}-{{ project }}.rscloudservices.icu
+user_host: user-{{ env }}-{{ project }}.rscloudservices.icu
+rabbitmq_host: rabbitmq-{{ env }}-{{ project }}.rscloudservices.icu
 rabbitmq_user: roboshop
 rabbitmq_pass: roboshop123

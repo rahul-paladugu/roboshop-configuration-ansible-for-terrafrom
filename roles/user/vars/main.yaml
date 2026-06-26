@@ -1,2 +1,2 @@
-redis: redis.rscloudservices.icu
-mongodb: mongodb.rscloudservices.icu
+redis: redis-{{ env }}-{{ project }}.rscloudservices.icu
+mongodb: mongodb-{{ env }}-{{ project }}.rscloudservices.icu

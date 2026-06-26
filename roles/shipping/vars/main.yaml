@@ -1,2 +1,2 @@
-mysql_host: mysql-{{ project }}-{{ env }}.rscloudservices.icu
-cart_host: cart-{{ project }}-{{ env }}.rscloudservices.icu
+mysql_host: mysql-{{ env }}-{{ project }}.rscloudservices.icu
+cart_host: cart-{{ env }}-{{ project }}.rscloudservices.icu

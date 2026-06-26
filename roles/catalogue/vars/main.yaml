@@ -1,2 +1,2 @@
-mongo_host: mongodb-{{ project }}-{{ env }}.rscloudservices.icu
-mongodb_host: mongodb-{{ project }}-{{ env }}.rscloudservices.icu
+mongo_host: mongodb-{{ env }}-{{ project }}.rscloudservices.icu
+mongodb_host: mongodb-{{ env }}-{{ project }}.rscloudservices.icu
